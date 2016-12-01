@@ -503,7 +503,7 @@ var RQ = (function () {
                             },
                             initial
                         );
-                        if (cancels[index] === undefined) {
+                        if (cancels && cancels[index] === undefined) {
                             cancels[index] = cancellation;
                         }
                     });
